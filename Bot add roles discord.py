@@ -9,10 +9,20 @@ config = {
 
 bot = commands.Bot(config['prefix'], intents=discord.Intents.all())
 
+@bot.event
+async def on_member_join(ctx, member):
+    defaultRole = member.guild.get_role(1273537192391868460)
+    await ctx.reply(f'Добро пожаловать на сервер, {member.mention}, ты был назначен на роль {defaultRole.mention}')
+
 # @bot.event
-
-# async def on_member_join(member):
-
+# async def on_message(ctx):
+#     if(ctx.author != bot.user):
+#         if(ctx.author.name == 'damond52'):
+#             await ctx.reply(f'Выйди отсюда лох')
+#         elif(ctx.author.name == 'dayncod'):
+#             await ctx.reply(f'Привет красавчик)')
+#         else:
+#             await ctx.reply(ctx.content)
 
 
 @bot.command()
