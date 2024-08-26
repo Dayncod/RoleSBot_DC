@@ -10,9 +10,10 @@ config = {
 bot = commands.Bot(config['prefix'], intents=discord.Intents.all())
 
 @bot.event
-async def on_member_join(ctx, member):
+async def on_member_join(member):
+    chanal = bot.get_channel(1047202154445807707)
     defaultRole = member.guild.get_role(1273537192391868460)
-    await ctx.reply(f'Добро пожаловать на сервер, {member.mention}, ты был назначен на роль {defaultRole.mention}')
+    await chanal.reply(f'Добро пожаловать на сервер, {member.mention}, ты был назначен на роль {defaultRole.mention}')
 
 # @bot.event
 # async def on_message(ctx):
