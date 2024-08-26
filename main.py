@@ -3,7 +3,7 @@ import discord
 from discord.ext import commands
 
 config = {
-    'token': 'MTI3NjE1ODg3OTk0NzgxNjk3MA.GqVFWS.DemFprpAYtsfaEpUeG4aWH_Q0i0CKe_k34aPis',
+    'token': 'MTI3NjE1ODg3OTk0NzgxNjk3MA.G65gmK.Og2iQXC5MswW14wNqGVRfKM_lfpe1Qj0PxadjE',
     'prefix': '$',
 }
 
