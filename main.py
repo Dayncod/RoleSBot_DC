@@ -4,7 +4,7 @@ from discord.utils import get
 from discord.ext import commands
 
 config = {
-    'token': 'MTI3NjE1ODg3OTk0NzgxNjk3MA.G65gmK.Og2iQXC5MswW14wNqGVRfKM_lfpe1Qj0PxadjE',
+    'token': 'YOUR TOKEN',
     'prefix': '$',
 }
 
